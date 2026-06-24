@@ -2,8 +2,8 @@ Day 3 Questions ....
 
 
 
-1....print 1 to n.
-answer :
+// program 1: print 1 to n.
+
 
 #include<iostream>
 using namespace std;
@@ -19,8 +19,8 @@ int main(){
 
 
 
-2....sum of n number.
-answer :
+// program 2....sum of n number.
+
 #include<iostream>
 using namespace std;
 int main(){
@@ -37,8 +37,8 @@ int main(){
 
 
 
-3....factorial.
-answer :
+// program 3....factorial.
+
 
 #include<iostream>
 using namespace std;
@@ -56,8 +56,8 @@ int main(){
 
 
 
-4....reverse number.
-answer :
+// program 4....reverse number.
+
 
 
 #include<iostream>
@@ -81,8 +81,8 @@ int main(){
 
 
 
-5....count digit.
-answer :
+// program 5....count digit.
+
 
 #include<iostream>
 using namespace std;
@@ -104,8 +104,8 @@ int main(){
 
 
 
-6....find prime number.
-answer :
+// program 6....find prime number.
+
 
 #include<iostream>
 using namespace std;
