@@ -1,0 +1,163 @@
+Day 6 Questions....
+
+---->>>> String
+
+
+
+1....Count the vowel in string.
+
+answer :
+
+
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main(){
+    string str;
+    
+    cout<<"Enter the word : ";
+    cin>>str;
+    int count=0;
+    for(int i=0;i<str.length();i++){
+        if('a'==str[i] || 'e'==str[i] || 'i'==str[i]  || 'o'==str[i] || 'u'==str[i]){
+            count++;
+        }
+
+    }
+    cout<<"Total character : "<<count;
+
+
+}
+
+
+
+2....print in reverse order.
+
+answer :
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main(){
+    string str;
+    cout<<"Enter the word : ";
+    cin>>str;
+    
+    for(int i=str.length();i<=str.length();i--){
+        cout<<str[i];
+
+
+    }
+}
+
+
+
+3....string is palindrome or not.
+
+answer :
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main(){
+    string str;
+    string student;
+    
+    cout<<"Enter the word : ";
+    cin>>str;
+    string temp=str;
+    for(int i=str.length()-1;i>=0;i--){
+        student=student+str[i];
+
+    }
+    if(temp==student){
+        cout<<"It is a palandrome number";
+
+    }
+    else{
+        cout<<"It is not a palandrome number ";
+    }
+
+    
+}
+
+
+4....count words in string.
+
+answer :
+
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main(){
+    string str;
+    int count=0;
+    cout<<"Enter the word : ";
+    cin>>str;
+    for(int i=0;i<str.length();i++){
+        count++;
+    }
+    cout<<"Total words : "<<count;
+
+}
+
+
+
+
+
+5....convert lower case to upper case.
+
+answer :
+
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main(){
+    string str;
+    cout<<"Enter the words : ";
+    cin>>str;
+    for(int i=0;i<=str.length();i++){
+        str[i]=toupper(str[i]);
+    }
+    cout<<"Uppar case : "<<str;
+}
+
+
+
+
+
+6....Anagram check.
+
+answer :
+
+
+#include<iostream>
+#include<string>
+#include<algorithm>
+using namespace std;
+int main(){
+    string str;
+    string str1;
+    cout<<"Enter the word : ";
+    cin>>str;
+    cout<<"Enter the word : ";
+    cin>>str1;
+    if(str.length()!=str1.length()){
+        cout<<"No anagram";
+        return 0;
+    }
+
+    sort(str.begin(), str.end());
+    sort(str1.begin(), str1.end());
+    if(str==str1){
+        cout<<"anagram";
+
+    }
+    else{
+        cout<<"Not a anagrma";
+    }
+
+}

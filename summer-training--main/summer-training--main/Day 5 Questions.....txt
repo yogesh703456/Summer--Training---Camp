@@ -1,0 +1,188 @@
+Day 5 Questions....
+
+
+
+
+1....maximum elements.
+answer :
+
+#include<iostream>
+using namespace std;
+int main(){
+    int length;
+    cout<<"Enter the size : ";
+    cin>>length;
+    int a[length];
+    for(int i=0;i<length;i++){
+        cout<<"Enter the number : ";
+        cin>>a[i];
+
+    }
+    int max=a[0];
+    for(int i=0;i<length;i++){
+        if(max<a[i]){
+            max=a[i];
+
+        }
+
+    }
+    cout<<max;
+}
+
+
+
+
+2....minimum elements.
+answer :
+
+#include<iostream>
+using namespace std;
+int main(){
+    int length;
+    cout<<"Enter the size : ";
+    cin>>length;
+    int a[length];
+    for(int i=0;i<length;i++){
+        cout<<"Enter the number : ";
+        cin>>a[i];
+    }
+    int min=a[0];
+    for(int i=0;i<length;i++){
+        if(min>a[i]){
+            min=a[i];
+        }
+    }
+    cout<<"The minimum value : "<<min;
+
+}
+
+
+
+3....array sum.
+answer :
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    int length;
+    cout<<"Enter the size : ";
+    cin>>length;
+    int a[length];
+    for(int i=0;i<length;i++){
+        cout<<"Enter the number : ";
+        cin>>a[i];
+    }
+    int sum=0;
+    for(int i=0;i<length;i++){
+        sum=sum+a[i];
+    }
+    cout<<"The sum of array : "<<sum;
+    
+
+
+}    
+
+
+
+4....reverse array.
+answer :
+
+#include<iostream>
+using namespace std;
+int main(){
+    int length;
+    cout<<"Enter the size : ";
+    cin>>length;
+    int a[length];
+    for(int i=0;i<length;i++){
+        cout<<"Enter the number : ";
+        cin>>a[i];
+    }
+    int rev=1;
+    for(int i=length-1;i>=0;i--){
+        cout<<a[i]<<" ";
+    }
+    
+
+
+}    
+
+
+
+
+5....second largest element.
+answer :
+
+#include<iostream>
+using namespace std;
+int main(){
+    int length;
+    cout<<"Enter the size : ";
+    cin>>length;
+    int a[length];
+    for(int i=0;i<length;i++){
+        cout<<"Enter the number : ";
+        cin>>a[i];
+    }
+    for(int i=0;i<length;i++){
+        for(int j=length-1;j<length;j++){
+            if(a[i]>a[j]){
+            int temp=a[i];
+            a[i]=a[j];
+            a[j]=temp;
+            
+            }
+        }
+
+    }
+    for(int i=0;i<length;i++){
+        cout<<a[i]<<" ";
+    }
+    cout<<"The second largest number : "<<a[length-2];
+
+    
+
+
+}    
+
+
+
+6....matrix addition.
+answer :
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a[2][2],b[2][2],sum[2][2];
+
+    cout<<"Enter the martix A : ";
+    for(int i=0;i<2;i++){
+        for(int j=0;j<2;j++){
+            cin>>a[i][j];
+
+        }
+    }
+    cout<<"Enter the matrix B : ";
+    for(int i=0;i<2;i++){
+        for(int j=0;j<2;j++){
+            cin>>b[i][j];
+        }
+    }
+    for(int i=0;i<2;i++){
+        for(int j=0;j<2;j++){
+            sum[i][j]=a[i][j]+b[i][j];
+        }
+    }
+    cout<<"Sum of matrix \n";
+    for(int i=0;i<2;i++){
+        for(int j=0;j<2;j++){
+            cout<<sum[i][j];
+
+        }
+        cout<<endl;
+
+    }
+
+}
+

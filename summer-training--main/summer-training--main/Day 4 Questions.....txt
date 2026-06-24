@@ -1,0 +1,169 @@
+Day 4 Questions....
+
+
+
+
+
+1....sum function.
+answer:
+
+#include<iostream>
+using namespace std;
+
+    int sum(int a,int b){
+    return a+b;
+    }
+
+
+int main(){
+    int a1,b2;
+    cout<<"Enter the number : ";
+    cin>>a1>>b2;
+    cout<<sum(a1,b2);
+
+}
+
+
+
+
+2.....maximum of two number.
+answer :
+
+
+#include<iostream>
+using namespace std;
+
+int maxi(int a,int b){
+    if(a>b){
+        return a;
+    }
+    else{
+        return b;
+    }
+}
+int main(){
+    int a1,b1;
+    cout<<"Enter the first number : ";
+    cin>>a1;
+    cout<<"Enter the second number : ";
+    cin>>b1;
+    cout<<maxi(a1,b1);
+}
+
+
+
+3....prime check function.
+answer :
+
+#include<iostream>
+using namespace std;
+
+int prime(int a){
+    int count=0;
+    for(int i=a;i>=1;i--){
+        if(a%i==0){
+            count++;
+            
+        }
+    }
+    if(count==2){
+        cout<<"It is a prime number";
+    }
+    else{
+        cout<<"It is not a prime number";
+    }
+
+}
+
+int main(){
+    int a;
+    cout<<"Enter the number : ";
+    cin>>a;
+    prime(a);
+}
+
+
+
+4......factorial function.
+answer :
+
+
+#include<iostream>
+using namespace std;
+
+int fac(int a){
+    
+    int mul=1;
+    for(int i=a;i>=1;i--){
+        mul=mul*i;
+        
+    }
+    return mul;
+}
+
+int main(){
+    int n;
+    cout<<"Enter the number : ";
+    cin>>n;
+    
+    cout<<fac(n);
+}
+
+
+
+
+
+5......power factor.
+answer :
+
+
+#include<iostream>
+using namespace std;
+
+int power(int a,int b){
+    int result=1;
+    for(int i=1;i<=b;i++){
+        result=result*a;
+    }
+    return result;
+    
+}
+int main(){
+    int n1,n2;
+    cout<<"Enter the base : ";
+    cin>>n1;
+    cout<<"Enter the power: ";
+    cin>>n2;
+    cout<<power(n1,n2);
+}
+
+
+
+6......GCD function.
+answer :
+
+
+#include<iostream>
+using namespace std;
+int gcd(int a,int b){
+    while(b!=0){
+      int temp=b;
+      b=a%b;
+      a=temp;
+    }
+        
+
+    
+    return a;
+}
+int main(){
+    int n1,n2;
+    cout<<"Enter the number : ";
+    cin>>n1;
+    cout<<"Enter the number : ";
+    cin>>n2;
+    cout<<gcd(n1,n2); 
+}
+
+
+
