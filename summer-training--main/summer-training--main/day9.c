@@ -128,6 +128,7 @@
 // }
 
 // program 6:max element
+
 int main()
 {
     int arr[100], n, i, max;
