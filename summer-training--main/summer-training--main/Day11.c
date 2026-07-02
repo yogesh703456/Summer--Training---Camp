@@ -66,7 +66,7 @@
 
 
 
-// program 3:most frequncy of element
+// program 3:most frequnct count  of element
 
 // int main()
 // {
